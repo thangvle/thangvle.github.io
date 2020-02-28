@@ -8,13 +8,9 @@ import Main from "./components/main";
 
 function App() {
   return (
-    <div style={{ height: "300px", position: "relative" }}>
+    <div style={{ height: "600px", position: "relative" }}>
       <Layout>
-        <Header
-          className="top-bar-color"
-          title="Title"
-          style={{ color: "Black" }}
-        >
+        <Header transparent title="Telefoto" style={{ color: "Black" }}>
           <Navigation>
             <Link style={{ color: "black" }} to="/aboutme">
               About Me
@@ -30,7 +26,7 @@ function App() {
             </Link>
           </Navigation>
         </Header>
-        <Drawer title="Title" style={{ color: "black" }}>
+        <Drawer title="Telefoto" style={{ color: "black" }}>
           <Navigation>
             <Link style={{ color: "black" }} to="/aboutme">
               About Me
