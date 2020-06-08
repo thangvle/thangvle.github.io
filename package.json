@@ -1,23 +1,38 @@
 {
-  "name": "chakra",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@material-ui/core": "^4.9.9",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
-    "firebase": "^7.9.0",
+    "bootstrap": "^4.5.0",
+    "emotion-theming": "^10.0.27",
+    "firebase": "^7.14.6",
+    "prettier": "^2.0.0",
+    "randomcolor": "^0.5.4",
     "react": "^16.13.0",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.0",
     "react-photo-gallery": "^8.0.0",
     "react-router": "^5.1.2",
-    "react-scripts": "3.4.0"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "react-scroll-parallax": "^2.3.2",
+    "react-spring": "^8.0.27",
+    "styled-components": "^5.1.1",
+    "tachyons-components": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,5 +48,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.3.17",
+    "@storybook/addon-links": "^5.3.17",
+    "@storybook/addons": "^5.3.17",
+    "@storybook/preset-create-react-app": "^2.1.0",
+    "@storybook/react": "^5.3.17",
+    "tachyons": "^4.11.1"
   }
 }

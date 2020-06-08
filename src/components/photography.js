@@ -1,14 +1,29 @@
-import React, { Component } from "react";
+import React, { Component, Fragment, useState } from "react";
+import { useTransition, animated } from "react-spring";
+import Shadow from "./assets/shadowriver.JPG";
+import PhotoContainer from "./photoComponents/photoContainer";
 
-class Photography extends Component {
-  state = {};
-  render() {
-    return (
+const Photography = () => {
+  const [images, setImage] = useState([
+    {
+      id: 1,
+      src:
+        "F:Programming Projectweb\thangvle.github.iosrccomponentsassetsshadowriver.JPG",
+    },
+    {
+      id: 2,
+      src:
+        "F:Programming Projectweb\thangvle.github.iosrccomponentsassetssongNghien.png",
+    },
+  ]);
+
+  return (
+    <Fragment>
       <div>
-        <h1>This is Photography</h1>
+        <PhotoContainer images={images} />
       </div>
-    );
-  }
-}
+    </Fragment>
+  );
+};
 
 export default Photography;

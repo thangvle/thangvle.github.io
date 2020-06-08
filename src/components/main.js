@@ -1,15 +1,16 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import { Link } from "@chakra-ui/core";
 
+import Header from "./header";
+import Landing from "./landing";
+import AboutMe from "./aboutme";
+import Photography from "./photography";
+import Video from "./video";
+import Contact from "./contact";
 const Main = () => (
-  <Switch>
-    <Route exact path="/" component={Landing} />
-    <Route path="/aboutme" component={About} />
-    <Route path="/photography" component={Photography} />
-    <Route path="/video" component={Video} />
-    <Route path="/contact" component={Contact} />
-  </Switch>
+  <div>
+    <Header />
+  </div>
 );
 
 export default Main;
