@@ -11,14 +11,16 @@ import Contact from "./contact";
 const Header = () => {
   return (
     <div>
-      <NavBar></NavBar>
-      <Switch>
-        <Route exact path="/" component={Landing} />
-        <Route path="/aboutme" component={AboutMe} />
-        <Route path="/photography" component={Photography} />
-        <Route path="/video" component={Video} />
-        <Route path="/contact" component={Contact} />
-      </Switch>
+      <Route>
+        <NavBar></NavBar>
+        <Switch>
+          <Route exact path="/" component={Landing} />
+          <Route path="/aboutme" component={AboutMe} />
+          <Route path="/photography" component={Photography} />
+          <Route path="/video" component={Video} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+      </Route>
       )
     </div>
   );

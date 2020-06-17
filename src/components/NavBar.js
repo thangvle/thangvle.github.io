@@ -15,7 +15,6 @@ const Styles = styled.div`
     font-size: 1em;
     padding: 0.15em 0.25em;
     margin: 0.5em;
-    display: inline-block;
     background: transparent;
     color: #000000 !important;
     background-position: center center;
@@ -37,7 +36,12 @@ const Styles = styled.div`
 export const NavBar = () => {
   return (
     <Styles>
-      <Navbar variant="dark" expand="md">
+      <Navbar
+        style={{ background: "transparent" }}
+        variant="dark"
+        expand="md"
+        fixed="top"
+      >
         <Navbar.Brand href="/">Telefoto</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
