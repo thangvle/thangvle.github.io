@@ -21,7 +21,6 @@ const Header = () => {
           <Route path="/contact" component={Contact} />
         </Switch>
       </Route>
-      )
     </div>
   );
 };

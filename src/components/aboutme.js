@@ -4,8 +4,8 @@ class AboutMe extends Component {
   state = {};
   render() {
     return (
-      <div>
-        <h1>This is About Me</h1>
+      <div style={{ backgroundColor: "black" }}>
+        <h1 style={{ color: "white" }}>This is About Me</h1>
       </div>
     );
   }

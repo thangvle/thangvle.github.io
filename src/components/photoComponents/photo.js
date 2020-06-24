@@ -4,7 +4,7 @@ const Photo = (props) => {
   console.log(props.image);
   return (
     <>
-      <h1></h1>
+      <h1>This is photos</h1>
     </>
   );
 };

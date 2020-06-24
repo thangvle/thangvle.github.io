@@ -18,11 +18,9 @@ const Photography = () => {
   ]);
 
   return (
-    <Fragment>
-      <div>
-        <PhotoContainer images={images} />
-      </div>
-    </Fragment>
+    <>
+      <PhotoContainer />
+    </>
   );
 };
 

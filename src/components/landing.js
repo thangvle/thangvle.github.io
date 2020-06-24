@@ -1,5 +1,4 @@
 import React, { Component, useState, useEffect, useRef, Fragment } from "react";
-import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import { animated, useSpring } from "react-spring";
 import Image from "./assets/songNghien.png";
 import DSC from "./assets/DSC02117.JPG";
