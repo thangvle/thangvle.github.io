@@ -1,7 +1,7 @@
 export default [
   {
     src: "url(https://source.unsplash.com/oNoctqY9Oso/800x1200)",
-    height: 150,
+    height: 800,
   },
   {
     src:
