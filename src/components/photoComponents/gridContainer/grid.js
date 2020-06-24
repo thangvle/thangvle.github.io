@@ -30,7 +30,7 @@ export const Grid = () => {
     return { ...child, xy, width: width / columns, height: child.height / 2 };
   });
   // Hook5: Turn the static grid values into animated transitions, any addition, removal or change will be animated
-  const transitions = useTransition(gridItems, (item) => item.css, {
+  const transitions = useTransition(gridItems, (item) => item.src, {
     from: ({ xy, width, height }) => ({ xy, width, height, opacity: 0 }),
     enter: ({ xy, width, height }) => ({ xy, width, height, opacity: 1 }),
     update: ({ xy, width, height }) => ({ xy, width, height }),
@@ -50,7 +50,7 @@ export const Grid = () => {
             ...rest,
           }}
         >
-          <div style={{ backgroundImage: item.css }} />
+          <div style={{ backgroundImage: item.src }} />
           <div />
         </a.div>
       ))}

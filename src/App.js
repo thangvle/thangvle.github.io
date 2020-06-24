@@ -8,7 +8,11 @@ import { Parallax } from "react-scroll-parallax";
 import "bootstrap/dist/css/bootstrap.min.css";
 class App extends Component {
   render() {
-    return <Header />;
+    return (
+      <div>
+        <Header />;
+      </div>
+    );
   }
 }
 

@@ -1,14 +1,7 @@
 import React, { Component } from "react";
 
-class Video extends Component {
-  state = {};
-  render() {
-    return (
-      <div>
-        <h1>This is Video</h1>
-      </div>
-    );
-  }
-}
+const Video = () => {
+  return <div style={{ marginTop: "100px" }}>This is video</div>;
+};
 
 export default Video;

@@ -14,7 +14,7 @@ const Styles = styled.div`
     min-width: 3em;
     font-size: 1em;
     padding: 0.15em 0.1em;
-    margin: 0.5em;
+    margin: 0 0.5em;
 
     background: transparent;
     color: #000000 !important;
@@ -25,7 +25,7 @@ const Styles = styled.div`
     }
   }
   .navbar-nav {
-    margin-right: 0rem !important ;
+    margin-right: 5rem !important ;
   }
   .navbar-toggle {
     position: absolute;

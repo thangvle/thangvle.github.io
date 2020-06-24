@@ -13,6 +13,7 @@ const Header = () => {
     <div>
       <Route>
         <NavBar></NavBar>
+
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route path="/aboutme" component={AboutMe} />

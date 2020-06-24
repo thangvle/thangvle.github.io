@@ -5,7 +5,7 @@ import { useTransition, animated } from "react-spring";
 
 const PhotoContainer = (props) => {
   return (
-    <div>
+    <div style={{ marginTop: "100px" }}>
       <Grid />
     </div>
   );
