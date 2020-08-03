@@ -1,5 +1,8 @@
-import firebase from "firebase/app";
+import * as firebase from "firebase";
+import "firebase/firestore";
+import "firebase/auth";
 import "firebase/storage";
+
 var firebaseConfig = {
   apiKey: "AIzaSyAJrfCPHnvMYvk9Gscd0AZ4JMRsYtrwHGk",
   authDomain: "telefoto.firebaseapp.com",
@@ -12,6 +15,6 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-const storage = firebase.storage();
-firebase.analytics();
-export default { storage, firebase };
+const storage = firebase.storage().ref();
+
+export default storage;

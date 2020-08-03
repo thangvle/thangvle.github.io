@@ -17,7 +17,7 @@ const Styles = styled.div`
     margin: 0 0.5em;
 
     background: transparent;
-    color: #000000 !important;
+    color: white !important;
     background-size: 110% 110%;
     transition: 0.4s;
     &:hover {
